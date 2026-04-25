@@ -99,12 +99,15 @@ body {
   transform: scale(1.05);
 }
 .dive4 {
+  display: flex;
+  gap: 1rem;
   margin-top: 2.5rem;
+  padding: 10px;
   font-family: 'poping', sans-serif;
   font-style: italic;
 }
 .dive5 {
-  font-size: 70px;
+  font-size: 60px;
   font-weight: bold;
 }
 .dive6 {
