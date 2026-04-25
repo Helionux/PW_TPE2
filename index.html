@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calcule d'âge</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="chef">
+  <form id="ageForm" novalidate>
+    <div class="dive1">
+      <div class="dive2">
+        <label for="day">DAY</label>
+        <input type="text" id="day" placeholder="DD">
+        <div class="error-msg" id="dayError"></div>
+      </div>
+      <div class="dive2">
+        <label for="month">MONTH</label>
+        <input type="text" id="month" placeholder="MM">
+        <div class="error-msg" id="monthError"></div>
+      </div>
+      <div class="dive2">
+        <label for="year">YEAR</label>
+        <input type="text" id="year" placeholder="YYYY">
+        <div class="error-msg" id="yearError"></div>
+      </div>
+    </div>
+    <div class="dive3">
+      <button type="submit" class="btn-submit">
+        🢃
+      </button>
+    </div>
+  </form>
+  <div class="dive4">
+    <div class="dive5">
+      <span class="dive6" id="yearsValue">- -</span>
+      <span class="dive7">years</span>
+    </div>
+    <div class="dive5">
+      <span class="dive6" id="monthsValue">- -</span>
+      <span class="dive7">months</span>
+    </div>
+    <div class="dive5">
+      <span class="dive6" id="daysValue">- -</span>
+      <span class="dive7">days</span>
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

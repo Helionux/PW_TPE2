@@ -1,0 +1,143 @@
+
+* ⁠{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --purple: #4500d8;
+  --black: #151515;
+  --off-black: #1e1e2a;
+  --light-grey: #f0f0f0;
+  --grey: #dbdbdb;
+  --red: #9b0606;
+  --white: #ffffff;
+}
+body {
+  background: var(--light-grey);
+  font-family: sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.chef {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 2rem 2rem 2rem 2rem;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.dive1 {
+  display: flex;
+  gap: 1rem;
+  border-bottom: 1px solid var(--grey);
+  padding-bottom: 2.5rem;
+  position: relative;
+}
+.dive2 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.dive2 label {
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 0.3rem;
+  color: #6c6c6c;
+}
+.dive2 input {
+  width: 100px;
+  height: 40px;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid var(--grey);
+  outline: none;
+  font-size: 1rem;
+  font-weight: 800;
+  transition: 0.2s ease;
+}
+.dive2 input:focus {
+  border-color: var(--purple);
+}
+.dive2.error label {
+  color: var(--red);
+}
+.dive2.error input {
+  border-color: var(--red);
+}
+.error-msg {
+  color: var(--red);
+  font-size: 0.7rem;
+  margin-top: 0.3rem;
+  font-style: italic;
+}
+.dive3 {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+.btn-submit {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  background: var(--purple);
+  color: var(--white);
+  font-size: 1.5rem;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  bottom: -30px;
+  transition: 0.2s ease;
+}
+.btn-submit:hover {
+  background: var(--black);
+  transform: scale(1.05);
+}
+.dive4 {
+  margin-top: 2.5rem;
+  font-family: 'poping', sans-serif;
+  font-style: italic;
+}
+.dive5 {
+  font-size: 70px;
+  font-weight: bold;
+}
+.dive6 {
+  color: var(--purple);
+}
+
+@media (max-width: 480px) {
+  .dive1 {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: flex-start;
+  }
+
+  .dive2 input {
+    width: 100%;
+  }
+
+  .dive3 {
+    justify-content: center;
+  }
+
+  .btn-submit {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    margin-top: 1rem;
+  }
+
+  .dive4 {
+    text-align: center;
+  }
+
+  .dive5 {
+    font-size: 40px;
+  }
+}
